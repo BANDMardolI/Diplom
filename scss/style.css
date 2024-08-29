@@ -1,0 +1,240 @@
+header,
+main,
+section,
+footer {
+  background-color: #111311;
+  color: white;
+  font-family: Gotham-pro;
+}
+
+section {
+  padding-block: 45px;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.main_btn {
+  border-radius: 30px;
+  padding: 10px 26px;
+  background-color: #dd3037;
+  font-family: Gotham-pro;
+  font-size: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.section_title {
+  font-family: Gotham-medium;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #999;
+}
+
+.active {
+  background-color: #999;
+  color: #212121;
+}
+
+.open_description {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #21a038;
+  font-size: 30px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "Gotham-light";
+  src: url("../src/fonts/gothampro_light.ttf");
+}
+@font-face {
+  font-family: Gotham-pro;
+  src: url("../src/fonts/gothampro.ttf");
+}
+@font-face {
+  font-family: Gotham-medium;
+  src: url("../src/fonts/gothampro_medium.ttf");
+}
+@font-face {
+  font-family: Gotham-bold;
+  src: url("../src/fonts/gothampro_bold.ttf");
+}
+@font-face {
+  font-family: Gotham-black;
+  src: url("../src/fonts/gothampro_black.ttf");
+}
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_container .tel__item {
+  font-size: 9px;
+  font-family: Gotham-medium;
+  line-height: 167%;
+}
+
+.front {
+  height: 500px;
+  background-image: url(../src/backgrounds/header_block_bg.webp);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+  padding-bottom: 45px;
+  font-family: Gotham-medium;
+}
+.front h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.front .front__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.front .front__container .front_description {
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 35px;
+}
+
+.about__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about__container .about__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about__container .about__item .frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #b6ffba;
+  border-radius: 5px;
+  margin-top: 35px;
+  padding: 3px 10px;
+  width: 80px;
+  height: 70px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5), 0 0 10px 0 #b6ffba;
+  background: rgba(0, 0, 0, 0.7);
+}
+.about__container .about__item .frame .frame__count {
+  font-family: Gotham-medium;
+  font-size: 24px;
+  color: #21a038;
+}
+.about__container .about__item .about__item_description {
+  max-width: 216px;
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.subdivision__container {
+  margin-block: 35px;
+}
+.subdivision__container h2 {
+  margin-bottom: 35px;
+}
+.subdivision__container .subdivision__item {
+  display: inline-block;
+  font-family: Gotham-medium;
+  margin: 8px;
+  padding: 6px 16px;
+  border: 3px solid #999;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.subdivision__container .subdivision__item .subdivision__name {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.vacancy_section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.vacancy_section .container .main_btn {
+  margin-top: 35px;
+}
+.vacancy_section .container .vacancy {
+  border: 3px solid #999;
+  border-radius: 30px;
+  padding: 30px;
+  margin-bottom: 15px;
+}
+.vacancy_section .container .vacancy .vacancy_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.vacancy_section .container .vacancy .vacancy_wrapper .vacancy__items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.vacancy_section .container .vacancy .vacancy_wrapper .vacancy__info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.vacancy_section .container .vacancy .vacancy_wrapper .vacancy__info .vacancy__name,
+.vacancy_section .container .vacancy .vacancy_wrapper .vacancy__info .salary {
+  max-width: 190px;
+  width: 100%;
+  font-family: Gotham-medium;
+  font-size: 18px;
+}
+.vacancy_section .container .vacancy .vacancy_wrapper .vacancy__info .salary {
+  color: #21a038;
+}
+.vacancy_section .container .vacancy .vacancy_description {
+  display: none;
+}
+.vacancy_section .container .vacancy .vacancy_description .vacancy_description__list_title {
+  margin-block: 10px;
+}
+.vacancy_section .container .vacancy .vacancy_description .vacancy_description__list {
+  margin-left: 20px;
+}
+
+.advantages .section_title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.advantages .adventage {
+  border-bottom: 3px solid #999;
+  padding: 15px;
+}
+.advantages .adventage .container {
+  display: flex;
+  justify-content: space-between;
+}
+.advantages .adventage .container .adventage_name {
+  max-width: 280px;
+  width: 100%;
+  font-size: 18px;
+  font-family: Gotham-medium;
+}
+.advantages .adventage .adventage__description {
+  padding: 5px 10px;
+  display: none;
+}/*# sourceMappingURL=style.css.map */
