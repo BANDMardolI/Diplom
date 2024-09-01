@@ -54,7 +54,7 @@ section {
 }
 
 @font-face {
-  font-family: "Gotham-light";
+  font-family: Gotham-light;
   src: url("../src/fonts/gothampro_light.ttf");
 }
 @font-face {
@@ -237,4 +237,82 @@ section {
 .advantages .adventage .adventage__description {
   padding: 5px 10px;
   display: none;
+}
+
+.career__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 35px;
+}
+.career__info p {
+  max-width: 420px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.career__slider {
+  position: relative;
+  max-width: 380px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.career__slider .career__slider_prev {
+  position: absolute;
+  top: 30%;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  color: white;
+  left: 0;
+}
+.career__slider .career__slider_next {
+  position: absolute;
+  top: 30%;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  color: white;
+  right: 15px;
+}
+
+.career__slider_card {
+  display: flex;
+  gap: 80px;
+  transition: transform 0.5s ease-in-out;
+}
+.career__slider_card .career__slider_main_block {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.career__slider_card .career__slider_main_block .employee_description {
+  width: 320px;
+}
+.career__slider_card .career__slider_main_block .employee_description li {
+  margin-top: 15px;
+}
+.career__slider_card .career__slider_main_block h3 {
+  margin-top: 15px;
+  font-family: Gotham-bold;
+  font-size: 16px;
+}
+.career__slider_card .career__slider_main_block h4 {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.career__slider_card .career__slider_main_block .job_title,
+.career__slider_card .career__slider_main_block .employee_name {
+  text-align: center;
+}
+.career__slider_card .career__slider_main_block .career__slider_photo {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */
