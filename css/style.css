@@ -19,12 +19,18 @@ section {
 
 .main_btn {
   border-radius: 30px;
-  padding: 10px 26px;
+  padding: 10px 20px;
   background-color: #dd3037;
   font-family: Gotham-pro;
   font-size: 12px;
   text-transform: uppercase;
   cursor: pointer;
+}
+@media (width > 992px) {
+  .main_btn {
+    font-size: 20px;
+    padding: 20px 60px;
+  }
 }
 
 .section_title {
@@ -33,6 +39,11 @@ section {
   text-transform: uppercase;
   color: #999;
   text-align: center;
+}
+@media (width > 992px) {
+  .section_title {
+    font-size: 28px;
+  }
 }
 
 .active {
@@ -117,12 +128,19 @@ section {
   flex-direction: column;
   align-items: center;
 }
-.about__container .about__item {
+@media (width > 992px) {
+  .about__container .about__items {
+    display: flex;
+    gap: 70px;
+    margin-top: 80px;
+  }
+}
+.about__container .about__items .about__item {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.about__container .about__item .frame {
+.about__container .about__items .about__item .frame {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -135,12 +153,12 @@ section {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5), 0 0 10px 0 #b6ffba;
   background: rgba(0, 0, 0, 0.7);
 }
-.about__container .about__item .frame .frame__count {
+.about__container .about__items .about__item .frame .frame__count {
   font-family: Gotham-medium;
   font-size: 24px;
   color: #21a038;
 }
-.about__container .about__item .about__item_description {
+.about__container .about__items .about__item .about__item_description {
   max-width: 216px;
   width: 100%;
   text-align: center;
@@ -161,6 +179,13 @@ section {
   border: 3px solid #999;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 12px;
+}
+@media (width > 992px) {
+  .subdivision__container .subdivision__item {
+    font-family: Gotham-pro;
+    font-size: 20px;
+  }
 }
 .subdivision__container .subdivision__item .subdivision__name {
   font-size: 12px;
@@ -171,6 +196,10 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.vacancy_section .container .vacancy__container {
+  max-width: 745px;
+  width: 100%;
 }
 .vacancy_section .container .main_btn {
   margin-top: 35px;
@@ -253,13 +282,14 @@ section {
 
 .career__slider {
   position: relative;
-  max-width: 380px;
+  max-width: 340px;
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
 }
 .career__slider .career__slider_prev {
   position: absolute;
+  cursor: pointer;
   top: 30%;
   width: 50px;
   height: 50px;
@@ -271,6 +301,7 @@ section {
 }
 .career__slider .career__slider_next {
   position: absolute;
+  cursor: pointer;
   top: 30%;
   width: 50px;
   height: 50px;
@@ -283,12 +314,10 @@ section {
 
 .career__slider_card {
   display: flex;
-  gap: 80px;
+  gap: 60px;
   transition: transform 0.5s ease-in-out;
 }
 .career__slider_card .career__slider_main_block {
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -315,4 +344,129 @@ section {
 .career__slider_card .career__slider_main_block .career__slider_photo {
   display: flex;
   justify-content: center;
+}
+
+.invite_job {
+  background-image: url("../src/backgrounds/invite_job_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.invite_job .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.invite_job .container .invite_job__main_text {
+  max-width: 900px;
+  width: 100%;
+  font-family: Gotham-medium;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+}
+@media (width > 992px) {
+  .invite_job .container .invite_job__main_text {
+    font-size: 28px;
+  }
+}
+.invite_job .container .invite_job__link_window {
+  width: 313px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 238px;
+  padding: 26px;
+  border: 3px solid #36853b;
+  border-radius: 20px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 0 10px 0 rgba(79, 183, 86, 0.7);
+  background: rgba(0, 0, 0, 0.7);
+}
+@media (width > 992px) {
+  .invite_job .container .invite_job__link_window {
+    width: 570px;
+    padding: 50px;
+  }
+}
+.invite_job .container .invite_job__link_window .invite_job__link_window_text {
+  font-family: Gotham-medium;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+@media (width > 992px) {
+  .invite_job .container .invite_job__link_window .invite_job__link_window_text {
+    font-size: 28px;
+    argin-bottom: 45px;
+  }
+}
+
+.contacts {
+  text-align: center;
+}
+@media (width > 992px) {
+  .contacts {
+    text-align: start;
+    padding-inline: 50px;
+  }
+}
+@media (width > 992px) {
+  .contacts .container {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+  }
+}
+.contacts .container .map {
+  width: 100%;
+  height: 400px;
+}
+@media (width > 992px) {
+  .contacts .container .map {
+    height: 400px;
+    max-width: 660px;
+  }
+}
+.contacts .container .subdivision__container {
+  flex-shrink: 0;
+}
+@media (width < 992px) {
+  .contacts .container .subdivision__container .subdivision__item {
+    width: 270px;
+  }
+}
+.contacts .container .subdivision__container .section_title {
+  text-align: start;
+}
+@media (width < 992px) {
+  .contacts .container .subdivision__container .section_title {
+    text-align: center;
+  }
+}
+.contacts .container .subdivision__container .contacts__item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 40px;
+}
+.contacts .container .subdivision__container .contacts__social {
+  margin-top: 45px;
+  text-align: center;
+}
+.contacts .container .subdivision__container .contacts__social a {
+  margin-right: 30px;
+}
+@media (width > 992px) {
+  .contacts .container .subdivision__container .contacts__social a {
+    margin-right: 60px;
+  }
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 40px;
+}
+footer p a {
+  text-decoration: underline;
+  margin-top: 20px;
 }/*# sourceMappingURL=style.css.map */

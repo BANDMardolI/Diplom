@@ -2,28 +2,33 @@
     display: flex
     flex-direction: column
     align-items: center
-    .about__item
-        display: flex
-        flex-direction: column
-        align-items: center
-        .frame
+    .about__items
+        @media(width > 992px)
             display: flex
+            gap: 70px
+            margin-top: 80px
+        .about__item
+            display: flex
+            flex-direction: column
             align-items: center
-            justify-content: center
-            border: 1px solid #b6ffba
-            border-radius: 5px
-            margin-top: 35px
-            padding: 3px 10px
-            width: 80px
-            height: 70px
-            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5), 0 0 10px 0 #b6ffba
-            background: rgba(0, 0, 0, 0.7)
-            .frame__count
-                font-family: Gotham-medium
-                font-size: 24px
-                color: #21a038
-        .about__item_description
-            max-width: 216px
-            width: 100%
-            text-align: center
-            margin-top: 15px
+            .frame
+                display: flex
+                align-items: center
+                justify-content: center
+                border: 1px solid #b6ffba
+                border-radius: 5px
+                margin-top: 35px
+                padding: 3px 10px
+                width: 80px
+                height: 70px
+                box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5), 0 0 10px 0 #b6ffba
+                background: rgba(0, 0, 0, 0.7)
+                .frame__count
+                    font-family: Gotham-medium
+                    font-size: 24px
+                    color: #21a038
+            .about__item_description
+                max-width: 216px
+                width: 100%
+                text-align: center
+                margin-top: 15px
